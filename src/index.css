@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Archivo", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+  --font-hand: "Kalam", "Segoe Print", "Bradley Hand", cursive;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+
+  --color-board: oklch(0.36 0.07 270);
+  --color-board-deep: oklch(0.27 0.06 270);
+  --color-desk: oklch(0.935 0.006 245);
+  --color-desk-deep: oklch(0.895 0.009 245);
+  --color-paper: oklch(0.992 0.003 95);
+  --color-paper-dim: oklch(0.962 0.005 95);
+  --color-ink: oklch(0.24 0.025 255);
+  --color-ink-2: oklch(0.4 0.02 255);
+  --color-ink-3: oklch(0.5 0.018 255);
+  --color-line: oklch(0.86 0.008 250);
+  --color-line-strong: oklch(0.76 0.01 250);
+
+  --color-signal: oklch(0.62 0.19 40);
+  --color-signal-ink: oklch(0.5 0.18 38);
+  --color-signal-bg: oklch(0.95 0.035 45);
+  --color-paid: oklch(0.46 0.1 155);
+  --color-paid-bg: oklch(0.94 0.04 155);
+  --color-pending: oklch(0.47 0.1 75);
+  --color-pending-bg: oklch(0.95 0.055 88);
+  --color-active: oklch(0.44 0.12 150);
+  --color-active-row: oklch(0.955 0.055 150);
+  --color-active-head: oklch(0.9 0.08 150);
+  --color-planned-head: oklch(0.9 0.055 250);
+  --color-planned: oklch(0.45 0.09 250);
+  --color-planned-bg: oklch(0.94 0.03 250);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+  body {
+    margin: 0;
+    background: var(--color-board-deep);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    font-variant-numeric: tabular-nums;
+  }
+  ::selection {
+    background: var(--color-signal);
+    color: white;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-signal);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+  button {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  input,
+  select,
+  textarea {
+    caret-color: var(--color-signal);
+    accent-color: var(--color-signal);
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-line-strong) transparent;
+  }
+  .no-visible-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-visible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  .mono {
+    font-family: var(--font-mono);
+    font-feature-settings: "zero" 1;
+  }
+  .label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-ink-3);
+  }
+
+  /* Felt wall the notes are pinned to */
+  .board {
+    background-color: var(--color-board);
+    background-image: radial-gradient(oklch(1 0 0 / 0.07) 1.2px, transparent 1.5px);
+    background-size: 22px 22px;
+  }
+  /* While Space is held over a card, every part of it is a grab handle. */
+  [data-space="true"],
+  [data-space="true"] * {
+    cursor: grab !important;
+    user-select: none;
+  }
+  .hand {
+    font-family: var(--font-hand);
+  }
+
+  /* Sticky note: light fold on top, soft cast underneath, curled corner. */
+  .note {
+    border-radius: 12px;
+    background-image:
+      linear-gradient(165deg, oklch(1 0 0 / 0.38), transparent 42%),
+      linear-gradient(to bottom, transparent 82%, oklch(0.2 0.05 60 / 0.07));
+    box-shadow:
+      0 1px 0 oklch(0.2 0.05 60 / 0.12),
+      0 14px 16px -8px oklch(0.1 0.05 270 / 0.55);
+    transition: box-shadow 220ms var(--ease-out-expo);
+  }
+  .note::after {
+    content: "";
+    border-bottom-right-radius: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 26px;
+    height: 26px;
+    background: linear-gradient(315deg, var(--board-bg, oklch(0.36 0.07 270)) 50%, oklch(0.2 0.05 60 / 0.16) 50%);
+  }
+  .note:hover,
+  .note[data-dragging="true"] {
+    box-shadow:
+      0 1px 0 oklch(0.2 0.05 60 / 0.12),
+      0 26px 24px -10px oklch(0.1 0.05 270 / 0.65);
+  }
+  /* Paper sheets share the note's fold and cast, and hang from washi tape. */
+  .paper-sheet {
+    background-image: linear-gradient(165deg, oklch(1 0 0 / 0.7), transparent 38%);
+    box-shadow:
+      0 1px 0 oklch(0.2 0.05 60 / 0.12),
+      0 14px 16px -8px oklch(0.1 0.05 270 / 0.55);
+  }
+  /* The same paper as the wall sheets, tuned for a white page. */
+  .sheet-soft {
+    background-image: linear-gradient(165deg, oklch(1 0 0 / 0.9), transparent 38%);
+    border: 1px solid var(--color-line);
+    box-shadow:
+      0 1px 0 oklch(0.2 0.05 60 / 0.04),
+      0 12px 18px -14px oklch(0.3 0.04 270 / 0.16);
+  }
+  .tape {
+    background-image: repeating-linear-gradient(90deg, oklch(1 0 0 / 0.22) 0 5px, transparent 5px 10px);
+    background-color: var(--tape, oklch(0.9 0.1 95 / 0.82));
+    box-shadow: 0 1px 2px oklch(0.2 0.05 60 / 0.3);
+    -webkit-mask: linear-gradient(90deg, #0000 0 1px, #000 1px calc(100% - 1px), #0000 0);
+    mask: linear-gradient(90deg, #0000 0 1px, #000 1px calc(100% - 1px), #0000 0);
+  }
+  .note-square {
+    border-radius: 0;
+  }
+  .note-flat::after {
+    display: none;
+  }
+  .note-light {
+    box-shadow:
+      0 1px 0 oklch(0.2 0.05 60 / 0.06),
+      0 10px 14px -10px oklch(0.3 0.04 270 / 0.22);
+  }
+  .note-light:hover {
+    box-shadow:
+      0 1px 0 oklch(0.2 0.05 60 / 0.06),
+      0 16px 18px -12px oklch(0.3 0.04 270 / 0.26);
+  }
+  .pushpin {
+    background: radial-gradient(circle at 32% 30%, oklch(0.86 0.13 45), oklch(0.6 0.2 38) 55%, oklch(0.42 0.16 35));
+    box-shadow: 0 5px 5px -2px oklch(0.1 0.05 270 / 0.55), inset 0 -2px 3px oklch(0.3 0.15 35 / 0.6);
+  }
+
+  /* Receipt tape */
+  .tape-paper {
+    background: var(--color-paper);
+    --tooth: 12px;
+    padding-block: calc(var(--tooth) / 2 + 14px);
+    -webkit-mask:
+      conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / var(--tooth) 51% repeat-x,
+      conic-gradient(from 135deg at top, #0000, #000 1deg 89deg, #0000 90deg) top / var(--tooth) 51% repeat-x;
+    mask:
+      conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / var(--tooth) 51% repeat-x,
+      conic-gradient(from 135deg at top, #0000, #000 1deg 89deg, #0000 90deg) top / var(--tooth) 51% repeat-x;
+  }
+  .leader {
+    flex: 1;
+    min-width: 12px;
+    border-bottom: 2px dotted var(--color-line-strong);
+    transform: translateY(-4px);
+  }
+
+  .hatch {
+    background-image: repeating-linear-gradient(
+      135deg,
+      var(--color-line-strong) 0 1.5px,
+      transparent 1.5px 6px
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

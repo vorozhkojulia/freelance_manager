@@ -1,0 +1,728 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-29T12:56:54.655Z",
+  "title": "Design System: Freelance Manager",
+  "extensions": {
+    "colorMeta": {
+      "board": {
+        "role": "secondary",
+        "displayName": "Felt Indigo",
+        "canonical": "oklch(0.36 0.07 270)",
+        "tonalRamp": [
+          "oklch(0.15 0.07 270)",
+          "oklch(0.27 0.07 270)",
+          "oklch(0.39 0.07 270)",
+          "oklch(0.51 0.07 270)",
+          "oklch(0.63 0.07 270)",
+          "oklch(0.75 0.07 270)",
+          "oklch(0.85 0.07 270)",
+          "oklch(0.95 0.07 270)"
+        ]
+      },
+      "board-deep": {
+        "role": "secondary",
+        "displayName": "Deep Felt",
+        "canonical": "oklch(0.27 0.06 270)",
+        "tonalRamp": [
+          "oklch(0.15 0.06 270)",
+          "oklch(0.27 0.06 270)",
+          "oklch(0.39 0.06 270)",
+          "oklch(0.51 0.06 270)",
+          "oklch(0.63 0.06 270)",
+          "oklch(0.75 0.06 270)",
+          "oklch(0.85 0.06 270)",
+          "oklch(0.95 0.06 270)"
+        ]
+      },
+      "desk": {
+        "role": "neutral",
+        "displayName": "Desk Grey",
+        "canonical": "oklch(0.935 0.006 245)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 245)",
+          "oklch(0.27 0.006 245)",
+          "oklch(0.39 0.006 245)",
+          "oklch(0.51 0.006 245)",
+          "oklch(0.63 0.006 245)",
+          "oklch(0.75 0.006 245)",
+          "oklch(0.85 0.006 245)",
+          "oklch(0.95 0.006 245)"
+        ]
+      },
+      "desk-deep": {
+        "role": "neutral",
+        "displayName": "Desk Grey Deep",
+        "canonical": "oklch(0.895 0.009 245)",
+        "tonalRamp": [
+          "oklch(0.15 0.009 245)",
+          "oklch(0.27 0.009 245)",
+          "oklch(0.39 0.009 245)",
+          "oklch(0.51 0.009 245)",
+          "oklch(0.63 0.009 245)",
+          "oklch(0.75 0.009 245)",
+          "oklch(0.85 0.009 245)",
+          "oklch(0.95 0.009 245)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Docket Paper",
+        "canonical": "oklch(0.992 0.003 95)",
+        "tonalRamp": [
+          "oklch(0.15 0.003 95)",
+          "oklch(0.27 0.003 95)",
+          "oklch(0.39 0.003 95)",
+          "oklch(0.51 0.003 95)",
+          "oklch(0.63 0.003 95)",
+          "oklch(0.75 0.003 95)",
+          "oklch(0.85 0.003 95)",
+          "oklch(0.95 0.003 95)"
+        ]
+      },
+      "paper-dim": {
+        "role": "neutral",
+        "displayName": "Paper Dim",
+        "canonical": "oklch(0.962 0.005 95)",
+        "tonalRamp": [
+          "oklch(0.15 0.005 95)",
+          "oklch(0.27 0.005 95)",
+          "oklch(0.39 0.005 95)",
+          "oklch(0.51 0.005 95)",
+          "oklch(0.63 0.005 95)",
+          "oklch(0.75 0.005 95)",
+          "oklch(0.85 0.005 95)",
+          "oklch(0.95 0.005 95)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Blue-Black Ink",
+        "canonical": "oklch(0.24 0.025 255)",
+        "tonalRamp": [
+          "oklch(0.15 0.025 255)",
+          "oklch(0.27 0.025 255)",
+          "oklch(0.39 0.025 255)",
+          "oklch(0.51 0.025 255)",
+          "oklch(0.63 0.025 255)",
+          "oklch(0.75 0.025 255)",
+          "oklch(0.85 0.025 255)",
+          "oklch(0.95 0.025 255)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink Secondary",
+        "canonical": "oklch(0.4 0.02 255)",
+        "tonalRamp": [
+          "oklch(0.15 0.02 255)",
+          "oklch(0.27 0.02 255)",
+          "oklch(0.39 0.02 255)",
+          "oklch(0.51 0.02 255)",
+          "oklch(0.63 0.02 255)",
+          "oklch(0.75 0.02 255)",
+          "oklch(0.85 0.02 255)",
+          "oklch(0.95 0.02 255)"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink Tertiary",
+        "canonical": "oklch(0.5 0.018 255)",
+        "tonalRamp": [
+          "oklch(0.15 0.018 255)",
+          "oklch(0.27 0.018 255)",
+          "oklch(0.39 0.018 255)",
+          "oklch(0.51 0.018 255)",
+          "oklch(0.63 0.018 255)",
+          "oklch(0.75 0.018 255)",
+          "oklch(0.85 0.018 255)",
+          "oklch(0.95 0.018 255)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Rule Line",
+        "canonical": "oklch(0.86 0.008 250)",
+        "tonalRamp": [
+          "oklch(0.15 0.008 250)",
+          "oklch(0.27 0.008 250)",
+          "oklch(0.39 0.008 250)",
+          "oklch(0.51 0.008 250)",
+          "oklch(0.63 0.008 250)",
+          "oklch(0.75 0.008 250)",
+          "oklch(0.85 0.008 250)",
+          "oklch(0.95 0.008 250)"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Rule Line Strong",
+        "canonical": "oklch(0.76 0.01 250)",
+        "tonalRamp": [
+          "oklch(0.15 0.01 250)",
+          "oklch(0.27 0.01 250)",
+          "oklch(0.39 0.01 250)",
+          "oklch(0.51 0.01 250)",
+          "oklch(0.63 0.01 250)",
+          "oklch(0.75 0.01 250)",
+          "oklch(0.85 0.01 250)",
+          "oklch(0.95 0.01 250)"
+        ]
+      },
+      "signal": {
+        "role": "primary",
+        "displayName": "Signal Orange",
+        "canonical": "oklch(0.62 0.19 40)",
+        "tonalRamp": [
+          "oklch(0.15 0.19 40)",
+          "oklch(0.27 0.19 40)",
+          "oklch(0.39 0.19 40)",
+          "oklch(0.51 0.19 40)",
+          "oklch(0.63 0.19 40)",
+          "oklch(0.75 0.19 40)",
+          "oklch(0.85 0.19 40)",
+          "oklch(0.95 0.19 40)"
+        ]
+      },
+      "signal-ink": {
+        "role": "primary",
+        "displayName": "Signal Ink",
+        "canonical": "oklch(0.5 0.18 38)",
+        "tonalRamp": [
+          "oklch(0.15 0.18 38)",
+          "oklch(0.27 0.18 38)",
+          "oklch(0.39 0.18 38)",
+          "oklch(0.51 0.18 38)",
+          "oklch(0.63 0.18 38)",
+          "oklch(0.75 0.18 38)",
+          "oklch(0.85 0.18 38)",
+          "oklch(0.95 0.18 38)"
+        ]
+      },
+      "signal-bg": {
+        "role": "primary",
+        "displayName": "Signal Wash",
+        "canonical": "oklch(0.95 0.035 45)",
+        "tonalRamp": [
+          "oklch(0.15 0.035 45)",
+          "oklch(0.27 0.035 45)",
+          "oklch(0.39 0.035 45)",
+          "oklch(0.51 0.035 45)",
+          "oklch(0.63 0.035 45)",
+          "oklch(0.75 0.035 45)",
+          "oklch(0.85 0.035 45)",
+          "oklch(0.95 0.035 45)"
+        ]
+      },
+      "paid": {
+        "role": "secondary",
+        "displayName": "Ledger Green",
+        "canonical": "oklch(0.46 0.1 155)",
+        "tonalRamp": [
+          "oklch(0.15 0.1 155)",
+          "oklch(0.27 0.1 155)",
+          "oklch(0.39 0.1 155)",
+          "oklch(0.51 0.1 155)",
+          "oklch(0.63 0.1 155)",
+          "oklch(0.75 0.1 155)",
+          "oklch(0.85 0.1 155)",
+          "oklch(0.95 0.1 155)"
+        ]
+      },
+      "paid-bg": {
+        "role": "secondary",
+        "displayName": "Ledger Green Wash",
+        "canonical": "oklch(0.94 0.04 155)",
+        "tonalRamp": [
+          "oklch(0.15 0.04 155)",
+          "oklch(0.27 0.04 155)",
+          "oklch(0.39 0.04 155)",
+          "oklch(0.51 0.04 155)",
+          "oklch(0.63 0.04 155)",
+          "oklch(0.75 0.04 155)",
+          "oklch(0.85 0.04 155)",
+          "oklch(0.95 0.04 155)"
+        ]
+      },
+      "pending": {
+        "role": "secondary",
+        "displayName": "Ledger Amber",
+        "canonical": "oklch(0.47 0.1 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.1 75)",
+          "oklch(0.27 0.1 75)",
+          "oklch(0.39 0.1 75)",
+          "oklch(0.51 0.1 75)",
+          "oklch(0.63 0.1 75)",
+          "oklch(0.75 0.1 75)",
+          "oklch(0.85 0.1 75)",
+          "oklch(0.95 0.1 75)"
+        ]
+      },
+      "pending-bg": {
+        "role": "secondary",
+        "displayName": "Ledger Amber Wash",
+        "canonical": "oklch(0.95 0.055 88)",
+        "tonalRamp": [
+          "oklch(0.15 0.055 88)",
+          "oklch(0.27 0.055 88)",
+          "oklch(0.39 0.055 88)",
+          "oklch(0.51 0.055 88)",
+          "oklch(0.63 0.055 88)",
+          "oklch(0.75 0.055 88)",
+          "oklch(0.85 0.055 88)",
+          "oklch(0.95 0.055 88)"
+        ]
+      },
+      "planned": {
+        "role": "secondary",
+        "displayName": "Plan Blue",
+        "canonical": "oklch(0.45 0.09 250)",
+        "tonalRamp": [
+          "oklch(0.15 0.09 250)",
+          "oklch(0.27 0.09 250)",
+          "oklch(0.39 0.09 250)",
+          "oklch(0.51 0.09 250)",
+          "oklch(0.63 0.09 250)",
+          "oklch(0.75 0.09 250)",
+          "oklch(0.85 0.09 250)",
+          "oklch(0.95 0.09 250)"
+        ]
+      },
+      "planned-bg": {
+        "role": "secondary",
+        "displayName": "Plan Blue Wash",
+        "canonical": "oklch(0.94 0.03 250)",
+        "tonalRamp": [
+          "oklch(0.15 0.03 250)",
+          "oklch(0.27 0.03 250)",
+          "oklch(0.39 0.03 250)",
+          "oklch(0.51 0.03 250)",
+          "oklch(0.63 0.03 250)",
+          "oklch(0.75 0.03 250)",
+          "oklch(0.85 0.03 250)",
+          "oklch(0.95 0.03 250)"
+        ]
+      },
+      "sticky-lemon": {
+        "role": "tertiary",
+        "displayName": "Lemon Note",
+        "canonical": "oklch(0.93 0.15 100)",
+        "tonalRamp": [
+          "oklch(0.15 0.15 100)",
+          "oklch(0.27 0.15 100)",
+          "oklch(0.39 0.15 100)",
+          "oklch(0.51 0.15 100)",
+          "oklch(0.63 0.15 100)",
+          "oklch(0.75 0.15 100)",
+          "oklch(0.85 0.15 100)",
+          "oklch(0.95 0.15 100)"
+        ]
+      },
+      "sticky-lemon-deep": {
+        "role": "tertiary",
+        "displayName": "Lemon Deep",
+        "canonical": "oklch(0.8 0.16 95)",
+        "tonalRamp": [
+          "oklch(0.15 0.16 95)",
+          "oklch(0.27 0.16 95)",
+          "oklch(0.39 0.16 95)",
+          "oklch(0.51 0.16 95)",
+          "oklch(0.63 0.16 95)",
+          "oklch(0.75 0.16 95)",
+          "oklch(0.85 0.16 95)",
+          "oklch(0.95 0.16 95)"
+        ]
+      },
+      "sticky-pink": {
+        "role": "tertiary",
+        "displayName": "Pink Note",
+        "canonical": "oklch(0.86 0.12 5)",
+        "tonalRamp": [
+          "oklch(0.15 0.12 5)",
+          "oklch(0.27 0.12 5)",
+          "oklch(0.39 0.12 5)",
+          "oklch(0.51 0.12 5)",
+          "oklch(0.63 0.12 5)",
+          "oklch(0.75 0.12 5)",
+          "oklch(0.85 0.12 5)",
+          "oklch(0.95 0.12 5)"
+        ]
+      },
+      "sticky-pink-deep": {
+        "role": "tertiary",
+        "displayName": "Pink Deep",
+        "canonical": "oklch(0.7 0.17 5)",
+        "tonalRamp": [
+          "oklch(0.15 0.17 5)",
+          "oklch(0.27 0.17 5)",
+          "oklch(0.39 0.17 5)",
+          "oklch(0.51 0.17 5)",
+          "oklch(0.63 0.17 5)",
+          "oklch(0.75 0.17 5)",
+          "oklch(0.85 0.17 5)",
+          "oklch(0.95 0.17 5)"
+        ]
+      },
+      "sticky-mint": {
+        "role": "tertiary",
+        "displayName": "Mint Note",
+        "canonical": "oklch(0.89 0.12 165)",
+        "tonalRamp": [
+          "oklch(0.15 0.12 165)",
+          "oklch(0.27 0.12 165)",
+          "oklch(0.39 0.12 165)",
+          "oklch(0.51 0.12 165)",
+          "oklch(0.63 0.12 165)",
+          "oklch(0.75 0.12 165)",
+          "oklch(0.85 0.12 165)",
+          "oklch(0.95 0.12 165)"
+        ]
+      },
+      "sticky-mint-deep": {
+        "role": "tertiary",
+        "displayName": "Mint Deep",
+        "canonical": "oklch(0.72 0.13 165)",
+        "tonalRamp": [
+          "oklch(0.15 0.13 165)",
+          "oklch(0.27 0.13 165)",
+          "oklch(0.39 0.13 165)",
+          "oklch(0.51 0.13 165)",
+          "oklch(0.63 0.13 165)",
+          "oklch(0.75 0.13 165)",
+          "oklch(0.85 0.13 165)",
+          "oklch(0.95 0.13 165)"
+        ]
+      },
+      "sticky-sky": {
+        "role": "tertiary",
+        "displayName": "Sky Note",
+        "canonical": "oklch(0.87 0.09 235)",
+        "tonalRamp": [
+          "oklch(0.15 0.09 235)",
+          "oklch(0.27 0.09 235)",
+          "oklch(0.39 0.09 235)",
+          "oklch(0.51 0.09 235)",
+          "oklch(0.63 0.09 235)",
+          "oklch(0.75 0.09 235)",
+          "oklch(0.85 0.09 235)",
+          "oklch(0.95 0.09 235)"
+        ]
+      },
+      "sticky-sky-deep": {
+        "role": "tertiary",
+        "displayName": "Sky Deep",
+        "canonical": "oklch(0.72 0.12 240)",
+        "tonalRamp": [
+          "oklch(0.15 0.12 240)",
+          "oklch(0.27 0.12 240)",
+          "oklch(0.39 0.12 240)",
+          "oklch(0.51 0.12 240)",
+          "oklch(0.63 0.12 240)",
+          "oklch(0.75 0.12 240)",
+          "oklch(0.85 0.12 240)",
+          "oklch(0.95 0.12 240)"
+        ]
+      },
+      "sticky-peach": {
+        "role": "tertiary",
+        "displayName": "Peach Note",
+        "canonical": "oklch(0.87 0.11 55)",
+        "tonalRamp": [
+          "oklch(0.15 0.11 55)",
+          "oklch(0.27 0.11 55)",
+          "oklch(0.39 0.11 55)",
+          "oklch(0.51 0.11 55)",
+          "oklch(0.63 0.11 55)",
+          "oklch(0.75 0.11 55)",
+          "oklch(0.85 0.11 55)",
+          "oklch(0.95 0.11 55)"
+        ]
+      },
+      "sticky-peach-deep": {
+        "role": "tertiary",
+        "displayName": "Peach Deep",
+        "canonical": "oklch(0.74 0.15 50)",
+        "tonalRamp": [
+          "oklch(0.15 0.15 50)",
+          "oklch(0.27 0.15 50)",
+          "oklch(0.39 0.15 50)",
+          "oklch(0.51 0.15 50)",
+          "oklch(0.63 0.15 50)",
+          "oklch(0.75 0.15 50)",
+          "oklch(0.85 0.15 50)",
+          "oklch(0.95 0.15 50)"
+        ]
+      },
+      "sticky-lilac": {
+        "role": "tertiary",
+        "displayName": "Lilac Note",
+        "canonical": "oklch(0.85 0.09 305)",
+        "tonalRamp": [
+          "oklch(0.15 0.09 305)",
+          "oklch(0.27 0.09 305)",
+          "oklch(0.39 0.09 305)",
+          "oklch(0.51 0.09 305)",
+          "oklch(0.63 0.09 305)",
+          "oklch(0.75 0.09 305)",
+          "oklch(0.85 0.09 305)",
+          "oklch(0.95 0.09 305)"
+        ]
+      },
+      "sticky-lilac-deep": {
+        "role": "tertiary",
+        "displayName": "Lilac Deep",
+        "canonical": "oklch(0.7 0.14 305)",
+        "tonalRamp": [
+          "oklch(0.15 0.14 305)",
+          "oklch(0.27 0.14 305)",
+          "oklch(0.39 0.14 305)",
+          "oklch(0.51 0.14 305)",
+          "oklch(0.63 0.14 305)",
+          "oklch(0.75 0.14 305)",
+          "oklch(0.85 0.14 305)",
+          "oklch(0.95 0.14 305)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Dashboard date heading."
+      },
+      "hand-display": {
+        "displayName": "Hand Display",
+        "purpose": "The Next-up line on the felt."
+      },
+      "hand-title": {
+        "displayName": "Hand Title",
+        "purpose": "Project names on sticky notes."
+      },
+      "section": {
+        "displayName": "Section",
+        "purpose": "Sheet titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Base UI text."
+      },
+      "body-small": {
+        "displayName": "Body Small",
+        "purpose": "Secondary text, controls."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Prices, dates, codes, hours."
+      },
+      "figure-total": {
+        "displayName": "Figure Total",
+        "purpose": "Receipt total."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Table heads and tape header."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sheet-lift",
+        "value": "0 18px 30px -16px oklch(0.1 0.05 270 / 0.7)",
+        "purpose": "Paper sheets on the felt."
+      },
+      {
+        "name": "sticky-rest",
+        "value": "0 1px 0 oklch(0.2 0.05 60 / 0.12), 0 14px 16px -8px oklch(0.1 0.05 270 / 0.55)",
+        "purpose": "Sticky note at rest."
+      },
+      {
+        "name": "sticky-lifted",
+        "value": "0 1px 0 oklch(0.2 0.05 60 / 0.12), 0 26px 24px -10px oklch(0.1 0.05 270 / 0.65)",
+        "purpose": "Note on hover or drag."
+      },
+      {
+        "name": "pushpin",
+        "value": "0 5px 5px -2px oklch(0.1 0.05 270 / 0.55), inset 0 -2px 3px oklch(0.3 0.15 35 / 0.6)",
+        "purpose": "Pin on each note."
+      },
+      {
+        "name": "tape",
+        "value": "drop-shadow(0 10px 12px oklch(0.1 0.05 270 / 0.45))",
+        "purpose": "Receipt tape (filter, since the mask clips box-shadow)."
+      },
+      {
+        "name": "deadline-flag",
+        "value": "0 3px 4px -1px oklch(0.2 0.05 60 / 0.35)",
+        "purpose": "Runway deadline flags."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "State transitions, 200-300ms."
+      },
+      {
+        "name": "note-spring",
+        "value": "spring stiffness 260, damping 22",
+        "purpose": "Sticky hover, drag, enter and exit."
+      },
+      {
+        "name": "tidy-spring",
+        "value": "spring bounce 0.3, duration 0.7s",
+        "purpose": "Tidy up returning notes to the row."
+      },
+      {
+        "name": "tab-spring",
+        "value": "spring bounce 0.3, duration 0.6s",
+        "purpose": "Active tab pill sliding."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ink-filled main action on paper.",
+      "html": "<button class=\"ds-btn-primary\">Save project</button>",
+      "css": ".ds-btn-primary{background:oklch(0.24 0.025 255);color:oklch(0.992 0.003 95);border:0;border-radius:6px;padding:6px 14px;font:500 14px Archivo,system-ui,sans-serif;cursor:pointer;transition:background 150ms}.ds-btn-primary:hover{background:oklch(0.4 0.02 255)}.ds-btn-primary:focus-visible{outline:2px solid oklch(0.62 0.19 40);outline-offset:2px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Paper button with a strong hairline.",
+      "html": "<button class=\"ds-btn-secondary\">Cancel</button>",
+      "css": ".ds-btn-secondary{background:oklch(0.992 0.003 95);color:oklch(0.24 0.025 255);border:1px solid oklch(0.76 0.01 250);border-radius:6px;padding:6px 12px;font:500 14px Archivo,system-ui,sans-serif;cursor:pointer}.ds-btn-secondary:hover{background:oklch(0.962 0.005 95)}.ds-btn-secondary:focus-visible{outline:2px solid oklch(0.62 0.19 40);outline-offset:2px}"
+    },
+    {
+      "name": "Board Button",
+      "kind": "button",
+      "refersTo": "button-on-board",
+      "description": "Ghost button on the felt.",
+      "html": "<div class=\"ds-board\"><button class=\"ds-btn-board\">Tidy up</button></div>",
+      "css": ".ds-board{background:oklch(0.36 0.07 270);padding:20px}.ds-btn-board{background:transparent;color:oklch(0.992 0.003 95);border:1px solid oklch(0.992 0.003 95 / .3);border-radius:6px;padding:6px 12px;font:500 14px Archivo,system-ui,sans-serif;cursor:pointer}.ds-btn-board:hover{background:oklch(0.992 0.003 95 / .1)}.ds-btn-board:focus-visible{outline:2px solid oklch(0.62 0.19 40);outline-offset:2px}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Paper field with signal focus border.",
+      "html": "<input class=\"ds-input\" placeholder=\"Project name\">",
+      "css": ".ds-input{background:oklch(0.992 0.003 95);color:oklch(0.24 0.025 255);border:1px solid oklch(0.76 0.01 250);border-radius:6px;padding:6px 10px;font:14px Archivo,system-ui,sans-serif;caret-color:oklch(0.62 0.19 40)}.ds-input::placeholder{color:oklch(0.5 0.018 255)}.ds-input:focus-visible{border-color:oklch(0.62 0.19 40);outline:2px solid oklch(0.62 0.19 40);outline-offset:2px}"
+    },
+    {
+      "name": "Tab Pills",
+      "kind": "nav",
+      "refersTo": "tab-active",
+      "description": "Pill tabs on the felt; active is paper.",
+      "html": "<div class=\"ds-tabs\"><button class=\"ds-tab ds-tab-on\">Dashboard</button><button class=\"ds-tab\">Timeline</button><button class=\"ds-tab\">Finances <span class=\"ds-badge\">2</span></button></div>",
+      "css": ".ds-tabs{background:oklch(0.27 0.06 270);padding:12px;display:flex;gap:4px}.ds-tab{background:transparent;border:0;border-radius:9999px;padding:6px 14px;color:oklch(0.992 0.003 95 / .75);font:500 14px Archivo,system-ui,sans-serif;cursor:pointer;display:inline-flex;gap:8px;align-items:center}.ds-tab:hover{color:oklch(0.992 0.003 95)}.ds-tab-on{background:oklch(0.992 0.003 95);color:oklch(0.24 0.025 255)}.ds-tab:focus-visible{outline:2px solid oklch(0.62 0.19 40);outline-offset:2px}.ds-badge{background:oklch(0.62 0.19 40);color:#fff;border-radius:9999px;padding:0 6px;min-width:20px;text-align:center;font:500 11px/20px 'JetBrains Mono',monospace}"
+    },
+    {
+      "name": "Status Pills",
+      "kind": "chip",
+      "refersTo": "pill-paid",
+      "description": "Tinted pills for invoice state.",
+      "html": "<span class=\"ds-pill ds-paid\">Paid</span> <span class=\"ds-pill ds-pend\">Pending</span> <span class=\"ds-pill ds-late\">Overdue</span>",
+      "css": ".ds-pill{display:inline-flex;border-radius:9999px;padding:2px 8px;font:500 12px Archivo,system-ui,sans-serif}.ds-paid{color:oklch(0.46 0.1 155);background:oklch(0.94 0.04 155)}.ds-pend{color:oklch(0.47 0.1 75);background:oklch(0.95 0.055 88)}.ds-late{color:oklch(0.5 0.18 38);background:oklch(0.95 0.035 45)}"
+    },
+    {
+      "name": "Sticky Note",
+      "kind": "card",
+      "refersTo": "sticky-note",
+      "description": "Pinned project note: pushpin, handwritten name, due stamp, tasks, price.",
+      "html": "<div class=\"ds-wall\"><div class=\"ds-note\"><span class=\"ds-pin\"></span><div class=\"ds-name\">Brand refresh</div><div class=\"ds-client\">Northwind</div><div class=\"ds-row\"><span class=\"ds-mono\">Due 3 Oct</span><span class=\"ds-stamp\">in 4 days</span></div><div class=\"ds-task\"><span class=\"ds-box\"></span>Send moodboard</div><div class=\"ds-foot\"><span class=\"ds-mono ds-price\">EUR 2,400</span></div></div></div>",
+      "css": ".ds-wall{background-color:oklch(0.36 0.07 270);background-image:radial-gradient(oklch(1 0 0 / .07) 1.2px,transparent 1.5px);background-size:22px 22px;padding:28px}.ds-note{position:relative;width:248px;min-height:200px;padding:28px 16px 16px;background:oklch(0.93 0.15 100);background-image:linear-gradient(165deg,oklch(1 0 0 / .38),transparent 42%);box-shadow:0 1px 0 oklch(0.2 0.05 60 / .12),0 14px 16px -8px oklch(0.1 0.05 270 / .55);transform:rotate(-2.4deg);color:oklch(0.24 0.025 255);font-family:Archivo,system-ui,sans-serif;transition:box-shadow 220ms cubic-bezier(.16,1,.3,1),transform 220ms}.ds-note:hover{transform:rotate(0) scale(1.03);box-shadow:0 1px 0 oklch(0.2 0.05 60 / .12),0 26px 24px -10px oklch(0.1 0.05 270 / .65)}.ds-pin{position:absolute;top:-10px;left:50%;width:24px;height:24px;margin-left:-12px;border-radius:50%;background:radial-gradient(circle at 32% 30%,oklch(0.86 0.13 45),oklch(0.6 0.2 38) 55%,oklch(0.42 0.16 35));box-shadow:0 5px 5px -2px oklch(0.1 0.05 270 / .55)}.ds-name{font:700 23px/1.05 Kalam,'Segoe Print',cursive}.ds-client{font-size:13px;color:oklch(0.4 0.02 255);margin-top:4px}.ds-row{display:flex;justify-content:space-between;align-items:center;margin-top:12px}.ds-mono{font-family:'JetBrains Mono',monospace;font-size:12px}.ds-stamp{font:600 11px 'JetBrains Mono',monospace;text-transform:uppercase;border:2px solid oklch(0.5 0.18 38);color:oklch(0.5 0.18 38);border-radius:2px;padding:2px 6px;transform:rotate(-3deg)}.ds-task{display:flex;gap:8px;align-items:flex-start;font-size:13px;margin-top:12px}.ds-box{width:16px;height:16px;border:2px solid oklch(0.24 0.025 255 / .7);border-radius:4px;background:oklch(1 0 0 / .4);flex:none}.ds-foot{display:flex;justify-content:flex-end;margin-top:24px}.ds-price{font-size:14px;font-weight:600}"
+    },
+    {
+      "name": "Paper Sheet",
+      "kind": "card",
+      "refersTo": "panel-paper",
+      "description": "Paper sheet lifted off the felt, with section title.",
+      "html": "<div class=\"ds-wall2\"><section class=\"ds-sheet\"><div class=\"ds-head\"><h2>Next six weeks</h2><span>deadlines on top, hours below</span></div><p>Chart or table content sits here.</p></section></div>",
+      "css": ".ds-wall2{background:oklch(0.36 0.07 270);padding:24px}.ds-sheet{background:oklch(0.992 0.003 95);color:oklch(0.24 0.025 255);border-radius:12px;padding:20px;box-shadow:0 18px 30px -16px oklch(0.1 0.05 270 / .7);font-family:Archivo,system-ui,sans-serif}.ds-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px}.ds-head h2{font-size:16px;font-weight:600;letter-spacing:-0.025em;margin:0}.ds-head span{font-size:14px;color:oklch(0.5 0.018 255)}.ds-sheet p{margin:0;font-size:15px}"
+    },
+    {
+      "name": "Receipt Tape",
+      "kind": "custom",
+      "refersTo": "receipt-tape",
+      "description": "Torn-edge money receipt with dotted leaders and a segmented bar.",
+      "html": "<div class=\"ds-wall2\"><div class=\"ds-tape\"><div class=\"ds-tl\">MONEY · EUR</div><div class=\"ds-line\"><span>Received</span><i></i><b style=\"color:oklch(0.46 0.1 155)\">4,800</b></div><div class=\"ds-line\"><span>Awaiting payment</span><i></i><b style=\"color:oklch(0.47 0.1 75)\">2,100</b></div><div class=\"ds-tot\"><span>Still expected</span><b>3,600</b></div><div class=\"ds-bar\"><u style=\"flex-grow:4.8;background:oklch(0.46 0.1 155)\"></u><u style=\"flex-grow:2.1;background:oklch(0.47 0.1 75)\"></u><u class=\"ds-hatch\" style=\"flex-grow:1.5\"></u></div></div></div>",
+      "css": ".ds-wall2{background:oklch(0.36 0.07 270);padding:24px}.ds-tape{width:280px;background:oklch(0.992 0.003 95);color:oklch(0.24 0.025 255);padding:20px 16px;font-family:Archivo,system-ui,sans-serif;-webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/12px 51% repeat-x,conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/12px 51% repeat-x;mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/12px 51% repeat-x,conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/12px 51% repeat-x}.ds-tl{font:11px 'JetBrains Mono',monospace;letter-spacing:.06em;color:oklch(0.5 0.018 255);text-align:center;margin-bottom:8px}.ds-line{display:flex;align-items:baseline;gap:8px;padding:6px 8px;font-size:14px}.ds-line i{flex:1;min-width:12px;border-bottom:2px dotted oklch(0.76 0.01 250);transform:translateY(-4px)}.ds-line b{font:500 15px 'JetBrains Mono',monospace}.ds-tot{display:flex;justify-content:space-between;align-items:baseline;margin:8px;padding-top:8px;border-top:1px dashed oklch(0.76 0.01 250);font-weight:600;font-size:14px}.ds-tot b{font:600 20px 'JetBrains Mono',monospace}.ds-bar{display:flex;gap:1px;height:12px;margin:0 8px;border-radius:9999px;overflow:hidden;background:oklch(0.895 0.009 245)}.ds-bar u{flex-basis:0;text-decoration:none}.ds-hatch{background-image:repeating-linear-gradient(135deg,oklch(0.76 0.01 250) 0 1.5px,transparent 1.5px 6px)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Studio Wall",
+    "overview": "A designer's pinboard in a working studio. Deep indigo felt with a faint dot texture is the wall; active projects are colored sticky notes pinned to it, slightly tilted, draggable, tickable and unpinnable. Anything that needs to be read carefully (the deadline runway, the project table, the money) sits on a flat sheet of paper laid over the wall. The mood is warm, handmade and tactile, but the data underneath stays exact and tabular.\n\nThree voices divide the work. Kalam handwriting is the human voice: project names on notes and the Next-up line. Archivo is the interface voice. JetBrains Mono carries figures, dates, codes and the small uppercase table heads. Color has one job per family: six sticky colors identify a project everywhere it appears; signal orange means pinned, urgent or focused; green and amber mean money state.",
+    "keyCharacteristics": [
+      "Felt wall (board) as the dashboard ground, paper sheets and receipt tape as the reading surfaces.",
+      "Six sticky colors bound to a project by list position, carried into chart bars, deadline flags, list swatches and pin toggles.",
+      "Kalam only for project names and the Next-up line; everything else is Archivo or JetBrains Mono.",
+      "One signal orange for pushpins, urgency, today marker, badges and focus.",
+      "Cross-highlighting: hover or focus a project in any view and all views of it light up while the rest dim.",
+      "Depth is physical: dark indigo-tinted casts under notes and sheets."
+    ],
+    "rules": [
+      {
+        "name": "The Project Color Rule",
+        "body": "A project's sticky color follows it across every screen. Colors identify projects, never status or severity.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Pin Rule",
+        "body": "Signal orange means pinned, urgent, today or focused. It is never a button fill or decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Money Tint Rule",
+        "body": "Green and amber appear only on money state.",
+        "section": "colors"
+      },
+      {
+        "name": "The Hand Is Names Rule",
+        "body": "Kalam is for project names and the Next-up sentence only. Controls, figures and body copy never use it.",
+        "section": "typography"
+      },
+      {
+        "name": "The Mono Is Data Rule",
+        "body": "Anything read off a receipt or docket (price, date, code, hours, days) is mono; sentences are Archivo.",
+        "section": "typography"
+      },
+      {
+        "name": "The Cast, Not Glow Rule",
+        "body": "Shadows are soft, low, board-tinted casts of a physical object. No colored glows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do bind each project to one sticky color and use its `-deep` tone wherever the color must sit on paper.",
+      "Do set figures, dates and codes in JetBrains Mono with tabular numerals.",
+      "Do keep orange for pins, urgency, today, badges and focus; use `signal-ink` for orange text.",
+      "Do show depth with board-tinted casts and let notes straighten and lift on hover.",
+      "Do keep every hover-highlight cross-linked: a project lit in one view lights in all.",
+      "Do respect reduced motion; state transitions run 200-300ms on ease-out-expo (`cubic-bezier(0.16, 1, 0.3, 1)`), notes and tabs use springs."
+    ],
+    "donts": [
+      "Don't put Kalam on controls, figures, tables or body copy.",
+      "Don't use sticky colors for status or severity, or green and amber outside money state.",
+      "Don't use torn or sawtooth edges on anything other than receipt-like objects.",
+      "Don't add dark mode; paper sheets and pastel notes are the world.",
+      "Don't fall back to a uniform SaaS card grid or hero KPI tiles for pinned projects."
+    ]
+  }
+}

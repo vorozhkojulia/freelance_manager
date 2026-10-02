@@ -1,0 +1,8 @@
+node_modules
+*.local
+.DS_Store
+*.tsbuildinfo
+.claude/settings.local.json
+.impeccable/review/
+.impeccable/build/
+.impeccable/mocks/
